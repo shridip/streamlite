@@ -60,8 +60,8 @@ class LoginToEmailUseImapTool:
 
         with st.form("login_form"):
             self.provider = st.text_input('Provider(Ex. gmail,hotmail etc)',key="provider",value="gmail")
-            self.email = st.text_input('Email-ID',key="email_id",value="shridip.chandole@gmail.com")
-            self.password = st.text_input('Password',key="password",type="password", value="dime hpul ilux jnrb")
+            self.email = st.text_input('Email-ID',key="email_id")
+            self.password = st.text_input('Password',key="password",type="password")
             self.loginSubmit = st.form_submit_button('Login',type="primary") #,disabled=st.session_state.disabled
 
         if(self.loginSubmit):
